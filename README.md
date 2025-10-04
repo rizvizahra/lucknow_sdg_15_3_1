@@ -1,6 +1,19 @@
-# Lucknow Land Cover and NDVI Analysis (SDG 15.3.1)
+# Lucknow Land Cover and Vegetation Health Analysis (2001–2020)
 
-This repository provides a complete Google Earth Engine (GEE) JavaScript workflow to assess land degradation (SDG 15.3.1) and urban expansion in Lucknow, India, over a 20-year period (2001–2020).
+This Google Earth Engine (GEE) JavaScript workflow provides a **complete, reproducible analysis** of **Land Use/Land Cover (LULC) change** and **vegetation health (NDVI)** for the Lucknow metropolitan region, India. The analysis spans two decades (2001–2020), offering critical insights into environmental shifts, particularly those related to **urban expansion** and **Sustainable Development Goal (SDG) Indicator 15.3.1 (Land Degradation Neutrality)**.
+
+---
+
+## Key Analysis Components
+
+The core script, `lucknow_land_cover_ndvi_analysis.js`, integrates **multi-sensor satellite data** to provide a comparative assessment:
+
+| Data Source | Purpose | Temporal Resolution | Spatial Resolution |
+| :--- | :--- | :--- | :--- |
+| **MODIS MCD12Q1** (IGBP) | Baseline and comparative **Land Cover Classification** | Annual (2001 vs. 2020) | $\sim 500\text{m}$ |
+| **Landsat 7/8** (Surface Reflectance) | Annual **Vegetation Health** (NDVI) and spectral data | Annual Median Composite | $\sim 30\text{m}$ |
+
+
 
 ## Contents
 
